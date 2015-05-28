@@ -1,0 +1,82 @@
+
+// Variables
+
+$brandColor     = #42A5F5
+$brandColorText = rgb(255, 255, 255)
+$textColor      = rgb(50, 50, 50)
+$fill           = gainsboro
+$padding        = 0.5em
+
+// Basic
+
+*
+  box-sizing: border-box
+
+html
+  height: 100%
+
+body
+  height: 100%
+  margin: 0
+
+  background: #fff
+
+  font-family: 'Roboto', Helvetica, sans-serif
+  font-weight: 300
+  font-size: 18px
+  color: $textColor
+
+h1, h2, h3, h4, h5
+  font-weight: normal
+
+
+
+input
+  width: 100%
+  padding: $padding
+  font-size: 1em
+  border: 2px solid $fill
+  
+  &:focus
+    outline: none
+  
+
+
+// Page elements
+
+#app
+  display: flex
+  align-items: center
+  height: 100%
+  
+.container
+  display: flex
+  flex-direction: column
+  width: 100%
+  height: 100%
+  padding: 2em
+  margin: 0 auto
+
+.conversation
+  flex-grow: 1
+  padding: $padding
+  border: 2px solid $fill
+  border-bottom: 0
+
+.message
+  margin: 0.1em 0
+
+.login,
+.composer
+  flex-grow: 0
+  
+.composer
+  display: flex
+  
+.composer-username
+  padding: $padding
+  background: $fill
+  border-left: 2px solid $fill
+  font-weight: bold
+  white-space: nowrap
+
